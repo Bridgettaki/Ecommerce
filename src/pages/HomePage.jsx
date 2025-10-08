@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./homepage.css";
+import "./HomePage.css";
 import heroImg from "../assets/b7.avif";
 import Img1 from "../assets/b1.jpg";
 import Img2 from "../assets/b2.jpg";
