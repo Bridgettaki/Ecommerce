@@ -10,21 +10,34 @@
   padding: 1rem;          /* ✅ allows breathing space on mobile */
 }
 
-/* -------------------- */
-/* Laptop frame */
-/* -------------------- */
 .laptop-frame {
-  width: 100%;            /* ✅ responsive */
-  max-width: 1200px;      /* ✅ caps size on desktop */
-  min-height: 500px;
+  width: 100%;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
+
+/* 💻 Desktop */
+@media (min-width: 1024px) {
+  .laptop-frame {
+    width: 1310px;
+    height: 620px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    padding: 0;
+  }
+}
+
+/* 🖥 Extra large screens */
+@media (min-width: 1600px) {
+  .laptop-frame {
+    width: 1400px;
+    height: 700px;
+  }
+}
+
 
 /* -------------------- */
 /* Login box */
