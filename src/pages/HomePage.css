@@ -1,7 +1,14 @@
+/* ========================= */
+/* Global reset */
+/* ========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .homepage {
@@ -9,19 +16,7 @@
   background: #002147;
   color: #fff;
   position: relative;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
-
-/* ========================= */
-/* CENTERING FIX (KEY PART) */
-/* ========================= */
-.header,
-.hero,
-.subcategories,
-.content {
-  max-width: 1400px;
-  margin: 0 auto;
+  min-height: 100vh; /* Full viewport height */
 }
 
 /* ========================= */
@@ -31,13 +26,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  max-width: 1200px;
-  margin: 0 auto
+  padding: 15px 20px; /* responsive padding */
   background: #002147;
   color: white;
   position: relative;
   z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto; /* center horizontally */
 }
 
 .header .nav a {
@@ -91,14 +86,16 @@
 }
 
 /* ========================= */
-/* Hero */
+/* Hero section */
 /* ========================= */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 2rem; /* 🔥 FIXED */
+  padding: 40px 20px; /* responsive padding */
   background: #FFAC1C;
+  max-width: 1200px;
+  margin: 0 auto; /* center horizontally */
 }
 
 .hero-text {
@@ -118,7 +115,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 30px 2rem; /* 🔥 FIXED */
+  padding: 30px 20px; /* responsive padding */
+  max-width: 1200px;
+  margin: 0 auto; /* center horizontally */
 }
 
 .subcategory {
@@ -137,7 +136,9 @@
 .content {
   display: flex;
   gap: 20px;
-  padding: 30px 2rem; /* 🔥 FIXED */
+  padding: 30px 20px; /* responsive padding */
+  max-width: 1200px;
+  margin: 0 auto; /* center horizontally */
 }
 
 .filters {
@@ -180,7 +181,6 @@
 
 /* ========================= */
 /* Tablet */
-/* ========================= */
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -202,7 +202,6 @@
 
 /* ========================= */
 /* Mobile */
-/* ========================= */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -217,6 +216,8 @@
   }
 }
 
+/* ========================= */
+/* Small phones */
 @media (max-width: 480px) {
   .products {
     grid-template-columns: 1fr;
@@ -226,5 +227,3 @@
     flex-direction: column;
   }
 }
-
- 
