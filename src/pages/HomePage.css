@@ -31,7 +31,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 2rem; /* 🔥 FIXED */
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto
   background: #002147;
   color: white;
   position: relative;
